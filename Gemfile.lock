@@ -147,6 +147,12 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    keytar (1.5.3)
+      activesupport
+    likeable (0.1.2)
+      activesupport
+      keytar (>= 1.5.2)
+      redis
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -225,6 +231,7 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redis (4.7.1)
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -305,8 +312,10 @@ DEPENDENCIES
   guard-livereload (~> 2.5, >= 2.5.2)
   importmap-rails
   jbuilder
+  likeable (~> 0.1.2)
   puma (~> 5.0)
   rails (~> 7.0.3)
+  redis (~> 4.0)
   sassc-rails
   selenium-webdriver
   simple_form (~> 5.1)
